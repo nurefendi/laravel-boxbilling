@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  nginx:
+    container_name: con_laravel
+    # lokasi source code
+    build:
+      context: ./
+      dockerfile: web.dockerfile
+    # path untuk source di dalam docker
+    volumes:
+      - ./:/var/www
+    image: webserver_laravel:1.0
+    ports:
+      - "8004:80"
+    networks:
+      - networks1
+
+  database:
+    container_name: databases
+    image: mariadb:10.3
+    networks:
+      - networks1
+    environment:
+      MYSQL_ROOT_PASSWORD: niagahoster
+      MYSQL_DATABASE: niagahoster
+
+  app:
+    container_name: app_laravel
+    build:
+      context: ./
+      dockerfile: app.dockerfile
+    image: app_laravel:1.0
+    networks:
+      - networks1
+    volumes:
+      - ./:/var/www
+    env_file: .env
+  
+
+networks:
+  networks1:
+      driver: bridge

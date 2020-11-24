@@ -1,0 +1,13 @@
+[22-Nov-2020 07:38:41 UTC] Currency format must include {{price}} tag 3569
+[22-Nov-2020 07:38:52 UTC] Currency format must include {{price}} tag 3569
+[22-Nov-2020 07:38:57 UTC] Currency format must include {{price}} tag 3569
+[22-Nov-2020 07:39:36 UTC] Class 'DOMDocument' not found
+[22-Nov-2020 16:09:15 UTC] Please check your login details 403
+[22-Nov-2020 16:09:38 UTC] Unable to find template "mod_page_admin.phtml" (looked into: /home/fendi/Documents/php-workspace/BoxBilling/bb-themes/boxbilling/html, /home/fendi/Documents/php-workspace/BoxBilling/bb-modules/Page/html_client).
+[22-Nov-2020 16:09:38 UTC] Page /admin not found
+[22-Nov-2020 16:43:26 UTC] 16384 Nesting a block definition under a non-capturing node in "mod_formbuilder_settings.phtml" at line 2 is deprecated since Twig 2.5.0 and will become a syntax error in 3.0. /home/fendi/Documents/php-workspace/BoxBilling/bb-vendor/twig/twig/src/Parser.php 371
+[22-Nov-2020 16:43:26 UTC] 16384 Nesting a block definition under a non-capturing node in "mod_formbuilder_settings.phtml" at line 4 is deprecated since Twig 2.5.0 and will become a syntax error in 3.0. /home/fendi/Documents/php-workspace/BoxBilling/bb-vendor/twig/twig/src/Parser.php 371
+[22-Nov-2020 16:43:26 UTC] 16384 Nesting a block definition under a non-capturing node in "mod_formbuilder_settings.phtml" at line 52 is deprecated since Twig 2.5.0 and will become a syntax error in 3.0. /home/fendi/Documents/php-workspace/BoxBilling/bb-vendor/twig/twig/src/Parser.php 371
+[22-Nov-2020 16:43:26 UTC] 16384 Nesting a block definition under a non-capturing node in "mod_formbuilder_settings.phtml" at line 199 is deprecated since Twig 2.5.0 and will become a syntax error in 3.0. /home/fendi/Documents/php-workspace/BoxBilling/bb-vendor/twig/twig/src/Parser.php 371
+[22-Nov-2020 16:52:41 UTC] Hosting product is not configured completely. Configure server for hosting product. 701
+[22-Nov-2020 16:52:54 UTC] Hosting product is not configured completely. Configure server for hosting product. 701
