@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  nginx:
+    container_name: con_box
+    # lokasi source code
+    build:
+      context: ./
+      dockerfile: web.dockerfile
+    # path untuk source di dalam docker
+    volumes:
+      - ./:/var/www
+    image: con_boxbilling:1.0
+    ports:
+      - "8004:80"
+    networks:
+      - networks2
+
+  database:
+    container_name: databases2
+    image: mariadb:10.3
+    networks:
+      - networks2
+    environment:
+      MYSQL_ROOT_PASSWORD: niagahoster2
+      MYSQL_DATABASE: niagahoster2
+    volumes: 
+      - ./install/structure.sql:/docker-entrypoint-initdb.d/dump.sql
+
+  app:
+    container_name: app_box
+    build:
+      context: ./
+      dockerfile: app.dockerfile
+    image: app_boxbilling:1.0
+    networks:
+      - networks2
+    volumes:
+      - ./:/var/www
+  
+
+networks:
+  networks2:
+      driver: bridge
