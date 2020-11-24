@@ -9,6 +9,7 @@
 * npm
 
 # Step to run project local
+in diroctory (laravel-vuejs) or `cd laravel-vuejs`
 
 * Rename file `.env.example` to `.env`
 * Create databases `niagahoster` or run this sql query `CREATE DATABASE niagahoster`
@@ -31,6 +32,7 @@ and run this command for npm
 
 
 # Step to run project docker
+in diroctory (laravel-vuejs) or `cd laravel-vuejs`
 
 * Rename file `.env.example` to `.env`
 
